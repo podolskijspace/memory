@@ -1,0 +1,11 @@
+.area {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__item {
+    padding: 15px;
+  }
+}

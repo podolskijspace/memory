@@ -1,0 +1,20 @@
+.bold {
+  font-weight: 700;
+}
+
+.h2 {
+  margin: 0;
+  font-size: 24rem;
+  font-weight: 700;
+  line-height: 1.417;
+
+  @include phone-lg {
+    font-size: 34rem;
+    line-height: 1.353;
+  }
+
+  @include tablet {
+    font-size: 42rem;
+    line-height: 1.357;
+  }
+}
