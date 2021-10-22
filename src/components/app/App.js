@@ -1,26 +1,22 @@
 import React from 'react';
-import Area from "../area/Area";
-import {connect} from "react-redux";
 
-function App({data}) {
+import {Route} from "react-router-dom"
+import Main from "../../pages/main/Main";
+import Results from "../../pages/results/Results";
+
+
+function App() {
+
+
+
 
 
   return (
     <div className="app">
-      <Area data={data}/>
+      <Route path="/" exact component={()=><Main/>}/>
+      <Route path="/results" exact component={()=><Results/>}/>
     </div>
-  );
+  )
 }
 
-const mstp = ({data}) => {
-  return {
-    data,
-  }
-}
-
-const mdtp = () => {
-
-}
-
-
-export default connect(mstp, mdtp)(App);
+export default App;

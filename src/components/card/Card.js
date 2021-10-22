@@ -1,7 +1,9 @@
-const Card = () => {
+const Card = ({text, status, onClick}) => {
   return (
-    <div className="card">
-      Карточка
+    <div onClick={onClick} className={`card ${status}`}>
+      <span className="card__text">
+        {text}
+      </span>
     </div>
   )
 }

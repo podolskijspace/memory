@@ -1,0 +1,26 @@
+.results {
+  &__title {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  &__table {
+    max-heigth: 500px;
+    overflow: auto;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__column {
+    width: 25%;
+    text-align: center;
+  }
+
+  &__back {
+    display: block;
+    margin: 25px 0 0;
+    text-align: center;
+  }
+}

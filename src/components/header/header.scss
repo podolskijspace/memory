@@ -1,0 +1,16 @@
+.header {
+  padding: 30px 0;
+  display: flex;
+
+  &__timer {
+    margin-right: 15px;
+  }
+
+  &__counter {
+    margin-right: 15px;
+  }
+
+  &__button {
+    margin: 0 10px;
+  }
+}
